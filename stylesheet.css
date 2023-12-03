@@ -15,7 +15,7 @@ body {
 }
 
 .header-list li {
-  text-decoration:underline;
+  text-decoration:underline solid #fff;
   list-style:none;
   float: left;
   padding: 33px 20px;
