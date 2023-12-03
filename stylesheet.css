@@ -15,6 +15,7 @@ body {
 }
 
 .header-list li {
+  list-style:none;
   float: right;
   padding: 33px 20px;
 }
