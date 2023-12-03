@@ -93,6 +93,10 @@ input, textarea {
   font-size: 32px;
 }
 
+.self{
+  fontsize: 50px;
+}
+  
 .footer-list {
   float: right;
 }
