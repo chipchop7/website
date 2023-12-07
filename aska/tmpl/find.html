@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!cmnurl!/bbs.css" rel="stylesheet">
+<title>ワード検索</title>
+</head>
+<body onload="document.find.word.focus()">
+
+<div id="head">
+	<div class="ta-r"><strong>!bbs_title!</strong></div>
+</div>
+<div id="back-btn">
+	<input type="button" class="color green button small" value="Back" onclick="window.open('!bbs_cgi!','_self')">
+</div>
+<div id="plate">
+<p class="ttl">!icon:search.png! 記事検索</p>
+<form action="!bbs_cgi!" method="get" name="find">
+<input type="hidden" name="mode" value="find">
+<p>キーワードをスペースで区切って複数指定することができます。</p>
+<input type="text" name="word" class="w-l" value="!word!">
+条件
+<select name="cond">
+<!-- op_cond -->
+</select>
+&nbsp;
+<input type="submit" class="w-b" value="検索">
+</form>
+</div>
+
+<!-- hits_msg -->
+<p class="hits-msg">検索結果： !hits!件の記事がヒットしました。</p>
+<!-- /hits_msg -->
+
+<div class="ta-c">
+
+<!-- loop -->
+<div class="art">
+	<strong>!sub!</strong>
+	投稿者：<b>!name!</b> 投稿日：!date! !home!<br>
+	<div class="com">!comment!</div>
+</div>
+<!-- /loop -->
+
+<div class="art"></div>
+
+</div>
+</body>
+</html>

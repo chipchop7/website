@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!cmnurl!/bbs.css" rel="stylesheet">
+<title>記事削除</title>
+</head>
+<body>
+
+<div id="head">
+	<div class="ta-r"><strong>!bbs_title!</strong></div>
+</div>
+<div id="back-btn">
+	<input type="button" class="color green button small" value="Back" onclick="window.open('!bbs_cgi!?pg=!pg!','_self')">
+</div>
+<form action="!bbs_cgi!" method="post">
+<input type="hidden" name="mode" value="dele">
+<input type="hidden" name="del" value="!del!">
+<div id="plate">
+	<div class="ttl">!icon:delete.png! 記事削除</div>
+	<p>
+		記事件名 ： <b>!sub!</b><br>
+		削除キー ： <input type="password" name="pwd" class="w-s">
+		<input type="submit" class="w-b" value="削除" onclick="return confirm('削除しますか？');">
+	</p>
+</div>
+</form>
+
+</body>
+</html>
