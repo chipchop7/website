@@ -24,10 +24,6 @@ body {
   padding: 100px 80px;
 }
 
-.copy-container h1 {
-  font-size: 140px;
-}
-
 .copy-container h2 {
   font-size: 20px;
 }
@@ -98,9 +94,4 @@ input, textarea {
   
 .footer-list {
   float: right;
-}
-
-.footer-list li {
-  list-style:none;
-  padding-bottom: 20px;
 }
